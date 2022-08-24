@@ -4,3 +4,13 @@ GET http://localhost:3000/shows
 ###
 
 GET http://localhost:3000/shows/1
+
+###
+
+POST http://localhost:3000/shows
+Content-Type: application/json
+
+{
+  "name": "The Simpsons",
+  "episodes": 999
+}
