@@ -17,6 +17,12 @@ class ShowsController < ApplicationController
     render json: show.as_json
   end
 
-
+  def update
+    show = Show.find_by(id: params[:id])
+    show.name = params[:name] || show.name
+    show.episodes = params[:episodes] || show.episodes
+    show.save
+    render json: show.as_json
+  end
 
 end
