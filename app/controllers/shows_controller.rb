@@ -25,4 +25,11 @@ class ShowsController < ApplicationController
     render json: show.as_json
   end
 
+  def destroy
+    show = Show.find_by(id: params[:id])
+    show.destroy
+    render json: {message: "Show Destroyed"}
+  end
+
+
 end

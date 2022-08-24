@@ -22,3 +22,6 @@ Content-Type: application/json
 {
   "name": "The Spongebob"
 }
+
+###
+DELETE http://localhost:3000/shows/6
